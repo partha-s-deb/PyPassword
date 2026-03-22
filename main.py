@@ -15,10 +15,10 @@ def get_yes_no(prompt):
 def get_length():
     while True:
         try:
-            length = int(input("  Password length (8-64): ").strip())
-            if 8 <= length <= 64:
+            length = int(input("  Password length (8-16): ").strip())
+            if 8 <= length <= 16:
                 return length
-            print("  Length must be between 8 and 64.")
+            print("  Length must be between 8 and 16.")
         except ValueError:
             print("  Please enter a valid number.")
 
